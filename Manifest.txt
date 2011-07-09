@@ -4,6 +4,15 @@ PostInstall.txt
 README.rdoc
 Rakefile
 lib/current.rb
+lib/current/controller.rb
+lib/current/document.rb
+lib/current/stamp.rb
+lib/current/stamp/created.rb
+lib/current/stamp/updated.rb
+lib/current/stamp/deleted.rb
+lib/current.rb
+lib/current.rb
+lib/current.rb
 script/console
 script/destroy
 script/generate

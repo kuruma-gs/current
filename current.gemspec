@@ -15,7 +15,7 @@ Gem::Specification.new do |s|
   s.post_install_message = %q{PostInstall.txt}
   s.rdoc_options = ["--main", "README.rdoc"]
   s.require_paths = ["lib"]
-  s.rubyforge_project = %q{strut}
+  s.rubyforge_project = %q{current}
   s.rubygems_version = %q{1.6.1}
   s.summary = %q{you use current_user etc. in views & controllers & models}
 

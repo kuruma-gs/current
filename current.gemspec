@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.description = %q{you use current_user etc. in views & controllers & models}
   s.email = ["kuruma@galileoscope.com"]
   s.extra_rdoc_files = ["History.txt", "Manifest.txt", "PostInstall.txt"]
-  s.files = ["History.txt", "Manifest.txt", "PostInstall.txt", "README.rdoc", "Rakefile", "lib/current.rb", "lib/current/controller.rb", "lib/current/helper.rb", "lib/current/controller/reset_current.rb", "lib/current/controller/set_current.rb", "lib/current/document.rb", "lib/current/stamp.rb", "lib/current/stamp/created.rb", "lib/current/stamp/updated.rb", "lib/current/stamp/deleted.rb", "script/console", "script/destroy", "script/generate", ".gemtest"]
+  s.files = ["History.txt", "Manifest.txt", "PostInstall.txt", "README.rdoc", "Rakefile", "lib/current.rb", "lib/current/controller.rb", "lib/current/controller/helper.rb", "lib/current/controller/reset_current.rb", "lib/current/controller/set_current.rb", "lib/current/document.rb", "lib/current/stamp.rb", "lib/current/stamp/created.rb", "lib/current/stamp/updated.rb", "lib/current/stamp/deleted.rb", "script/console", "script/destroy", "script/generate"]
   s.homepage = %q{http://github.com/#{github_username}/#{project_name}}
   s.post_install_message = %q{PostInstall.txt}
   s.rdoc_options = ["--main", "README.rdoc"]

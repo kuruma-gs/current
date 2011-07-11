@@ -5,6 +5,9 @@ require File.join(File.dirname(__FILE__),'current/controller.rb')
 require File.join(File.dirname(__FILE__),'current/document.rb')
 require File.join(File.dirname(__FILE__),'current/stamp.rb')
 
+
+class Current::Error < StandardError; end
+
 module Current
   VERSION = '0.0.1'
 end

@@ -9,11 +9,12 @@ module Current
     include Helper
 
     module ClassMethods
-      def controller_currents(*clazzs)
+      def currents(*clazzs)
         set_currents(*clazzs)
         reset_currents(*clazzs)
         current_helpers(*clazzs)
       end
+      alias_method :controller_currents, :currents
     end
 
   end

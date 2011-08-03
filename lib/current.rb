@@ -8,7 +8,3 @@ require File.join(File.dirname(__FILE__),'current/stamp.rb')
 
 
 class Current::Error < StandardError; end
-
-module Current
-  VERSION = '0.0.4'
-end

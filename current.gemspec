@@ -2,7 +2,7 @@
 lib = File.expand_path('../lib/', __FILE__)
 $:.unshift lib unless $:.include?(lib)
 
-require "current"
+require "current/version"
 
 Gem::Specification.new do |s|
   s.name        = "current"
@@ -12,6 +12,7 @@ Gem::Specification.new do |s|
   s.email       = ["kuruma@galileoscope.com"]
   s.homepage    = %q{http://github.com/#{github_username}/#{project_name}}
   s.summary     = "use current object in models"
+  s.description = "use current object in models"
 
   s.required_rubygems_version = ">= 1.3.6"
   s.add_dependency("rails", [">= 3.0.0"])

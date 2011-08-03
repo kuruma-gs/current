@@ -11,6 +11,7 @@ Gem::Specification.new do |s|
   s.authors     = ["kuruma3"]
   s.email       = ["kuruma@galileoscope.com"]
   s.homepage    = %q{http://github.com/#{github_username}/#{project_name}}
+  s.summary     = "use current object in models"
 
   s.required_rubygems_version = ">= 1.3.6"
   s.add_dependency("activesupport", [">= 3.1.0.rc5"])

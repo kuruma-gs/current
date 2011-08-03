@@ -8,9 +8,7 @@ module Current
           raise Current::Error,"#{clazz} must include Current::Document" unless clazz.include? Current::Document
           class_eval do
             belongs_to field, options.merge(:class_name=>clazz.to_s)
-            set_callback :save, :before, "set_#{field}", :if => Proc.new { |doc|
-              doc.new_record? || doc.changed?
-            }
+            before_validation "set_#{field}"
           end
           define_method "set_#{field}" do
             self.send("#{field}=", clazz.current) if !clazz.current
@@ -21,9 +19,7 @@ module Current
           raise Current::Error,"#{clazz} must include Current::Document" unless clazz.include? Current::Document
           class_eval do
             has_and_belongs_to_many field, options.merge(:class_name=>clazz.to_s)
-            set_callback :save, :before, "set_#{field}", :if => Proc.new { |doc|
-              doc.new_record? || doc.changed?
-            }
+            before_validation "set_#{field}"
           end
           define_method "set_#{field}" do
             self.send(field) << clazz.current if clazz.current

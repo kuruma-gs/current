@@ -1,0 +1,2 @@
+[paths]
+default = ssh://ec2gate//var/www/rails/development/current

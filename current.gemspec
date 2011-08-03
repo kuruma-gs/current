@@ -14,7 +14,7 @@ Gem::Specification.new do |s|
   s.summary     = "use current object in models"
 
   s.required_rubygems_version = ">= 1.3.6"
-  s.add_dependency("activesupport", [">= 3.1.0.rc5"])
+  s.add_dependency("rails", [">= 3.1.0.rc5"])
 
   s.files        = Dir.glob("lib/**/*") + %w(README.rdoc Rakefile)
   s.require_path = 'lib'

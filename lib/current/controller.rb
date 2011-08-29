@@ -1,3 +1,4 @@
+require "rails"
 require "current/controller/helper"
 require "current/controller/reset_current"
 require "current/controller/set_current"

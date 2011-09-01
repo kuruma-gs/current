@@ -8,7 +8,7 @@ module Current
           raise Current::Error,'argument error. created_stamp(field,clazz)\'s clazz must be Class' unless clazz.class==Class
           raise Current::Error,"#{clazz} must include Current::Document" unless clazz.include? Current::Document
           class_eval do
-            belongs_to field, options.merge(:class_name=>clazz.to_s)
+            belongs_to field, options.merge(:class_name=>clazz.to_s), index: true
             set_callback :destroy, :before, "set_#{field}"
           end
 
@@ -21,7 +21,7 @@ module Current
           raise Current::Error,'argument error. created_stamp(field,clazz)\'s clazz must be Class' unless clazz.class==Class
           raise Current::Error,"#{clazz} must include Current::Document" unless clazz.include? Current::Document
           class_eval do
-            has_and_belongs_to_many field, options.merge(:class_name=>clazz.to_s)
+            has_and_belongs_to_many field, options.merge(:class_name=>clazz.to_s), index: true
             set_callback :destroy, :before, "set_#{field}"
           end
 

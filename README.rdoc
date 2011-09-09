@@ -3,15 +3,15 @@ stamp and store current model easily ,so you can imvoke stored model anywhere la
 
 == REQUIREMENTS:
 
-   Rails3 , Rails2 , Cramp?(just checking)
-   activesupport
+Rails3 , Rails2 , Cramp?(just checking)
+activesupport
 
 == INSTALL:
 
-  gem 'current', :git => 'https://github.com/kuruma-gs/current.git'
-  bundle install
+    gem 'current', :git => 'https://github.com/kuruma-gs/current.git'
+    bundle install
 
-== Usage
+== Getting Started
 
 1. Include in specific model
 
@@ -27,31 +27,6 @@ stamp and store current model easily ,so you can imvoke stored model anywhere la
     EX. 
       before_filter :set_current_report
       def set_current_report; Report.current = Report.where(unit: params[:report_id]).first   if params[:report_id]; end
-
-
-== Getting Started
-
-1. Install Rails at the command prompt if you haven't yet:
-
-    gem install rails
-
-2. At the command prompt, create a new Rails application:
-
-    rails new myapp
-
-   where "myapp" is the application name.
-
-3. Change directory to +myapp+ and start the web server:
-
-    cd myapp; rails server
-
-   Run with <tt>--help</tt> for options.
-
-4. Go to http://localhost:3000 and you'll see:
-
-    "Welcome aboard: You're riding Ruby on Rails!"
-
-5. Follow the guidelines to start developing your application. You may find the following resources handy:
 
 
 == LICENSE:

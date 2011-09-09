@@ -22,8 +22,23 @@ stamp and store current model easily ,so you can imvoke stored model anywhere la
 
 
 2.  Setting before_filter
+3.  Setting before_filter
+4.  Setting before_filter
+5.  Setting before_filter
+
+
+store current model to (Model_name).current in each connection.
 
  store current model to (Model_name).current in each connection.
+
+
+  store current model to (Model_name).current in each connection.
+
+
+   store current model to (Model_name).current in each connection.
+
+
+    store current model to (Model_name).current in each connection.
 
 
   EX. 

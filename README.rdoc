@@ -15,28 +15,16 @@ stamp and store current model easily ,so you can imvoke stored model anywhere la
 
 1.  Include in specific model
 
-Include above one line in a specific model class you want to add, then
-3 methods(store,read,reload to buffer) has been added in current model class.
+ Include above one line in a specific model class you want to add, then
+ 3 methods(store,read,reload to buffer) has been added in current model class.
 
     include Current::Document
 
-
-                                  Include above one line in a specific model class you want to add, then
- 3 methods(store,read,reload to buffer) has been added in current model class.
-
-
-       include Current::Document
-
-
-
 2.  Setting before_filter
-3.  Setting before_filter
-4.  Setting before_filter
-5.  Setting before_filter
 
-store current model to (Model_name).current in each connection.
+ store current model to (Model_name).current in each connection.
 
-  EX. 
+ EX. 
     before_filter :set_current_report
     def set_current_report; Report.current = Report.where(unit: params[:report_id]).first   if params[:report_id]; end
 

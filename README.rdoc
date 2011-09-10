@@ -1,26 +1,33 @@
-= current
-
-* http://github.com/#{github_username}/#{project_name}
-
 == DESCRIPTION:
-
-FIX (describe your package)
-
-== FEATURES/PROBLEMS:
-
-* FIX (list of features or problems)
-
-== SYNOPSIS:
-
-  FIX (code sample of usage)
+stamp and store current model easily ,so you can imvoke stored model anywhere later.
 
 == REQUIREMENTS:
 
-* FIX (list of requirements)
+Rails3 , Rails2 , Cramp?(just checking)
+activesupport
 
 == INSTALL:
 
-* FIX (sudo gem install, anything else)
+    gem 'current', :git => 'https://github.com/kuruma-gs/current.git'
+    bundle install
+
+== Getting Started
+
+1. Include in specific model
+
+   Include above one line in a specific model class you want to add, then
+   3 methods(store,read,reload to buffer) has been added in current model class.
+
+    include Current::Document
+
+2. Setting before_filter
+
+   store current model to (Model_name).current in each connection.
+
+    EX. 
+      before_filter :set_current_report
+      def set_current_report; Report.current = Report.where(unit: params[:report_id]).first   if params[:report_id]; end
+
 
 == LICENSE:
 
